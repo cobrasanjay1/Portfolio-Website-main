@@ -6,9 +6,11 @@ const About = () => {
       <div className="about-me">
         <h3 className="title">About Me</h3>
         <p className="para">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic quis
-          dolores numquam iusto Ratione earum ducimus autem id iure pariatur
-          dolorum quae maiores.
+          Full Stack Web Developer skilled in ethical hacking, Linux, MySQL,
+          Python, C, Java, and Android app development. Experienced in
+          Photoshop, After Effects, and digital drawing — passionate about
+          creating secure, functional, and visually engaging digital solutions
+          across web and mobile platforms.
         </p>
       </div>
     </div>
