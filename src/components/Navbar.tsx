@@ -68,6 +68,11 @@ const Navbar = () => {
               <HoverLinks text="CONTACT" />
             </a>
           </li>
+          <li>
+            <a href="https://infvoid.vercel.app/" target="_blank" rel="noopener noreferrer">
+              <HoverLinks text="GALLERY" />
+            </a>
+          </li>
         </ul>
       </div>
 
