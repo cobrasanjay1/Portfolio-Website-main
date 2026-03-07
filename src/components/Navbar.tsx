@@ -42,8 +42,8 @@ const Navbar = () => {
   return (
     <>
       <div className="header">
-        <a href="/#" className="navbar-title" data-cursor="disable">
-          Logo
+        <a href="/#" className="navbar-title" data-cursor="enable">
+          <img src="https://res.cloudinary.com/dywen807s/image/upload/v1772879259/Untitled_Artwork_whlszc.png" alt="Sanjay Vinod Logo" style={{ height: "40px", width: "auto", display: "block" }} />
         </a>
         <a
           href="mailto:sanjay.vinod25@gmail.com"
