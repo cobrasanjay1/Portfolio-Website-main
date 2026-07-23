@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import "./styles/Loading.css";
 import { useLoading } from "../context/LoadingProvider";
 import LetterGlitch from "./LetterGlitch";
+import DecryptedText from "./DecryptedText";
 
 const Loading = ({ percent }: { percent: number }) => {
   const { setIsLoading } = useLoading();
@@ -71,13 +72,27 @@ const Loading = ({ percent }: { percent: number }) => {
             <div className="loading-container">
               <div className="loading-content">
                 <div className="loading-content-in">
-                  Loading <span>{percent}%</span>
+                  <DecryptedText
+                    text="Loading"
+                    animateOn="view"
+                    speed={60}
+                    maxIterations={15}
+                    sequential={true}
+                    revealDirection="start"
+                  />{" "}
+                  <span className="loading-percent">{percent}%</span>
                 </div>
               </div>
               <div className="loading-box"></div>
             </div>
             <div className="loading-content2">
-              <span>Welcome</span>
+              <DecryptedText
+                text="Welcome"
+                animateOn="view"
+                speed={60}
+                maxIterations={10}
+                sequential={true}
+              />
             </div>
           </div>
         </div>

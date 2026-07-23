@@ -132,7 +132,7 @@
   transition: 0.5s;
 }
 
-.loading-content span {
+.loading-content .loading-percent {
   font-weight: 300;
   position: absolute;
   top: 50%;
@@ -168,8 +168,6 @@
 }
 .loading-clicked .loading-content2 {
   overflow: visible;
-}
-.loading-clicked .loading-content2 span {
   transition: 1s;
   transform: translateY(100px);
   opacity: 0;
