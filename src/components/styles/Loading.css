@@ -1,13 +1,22 @@
 .loading-screen {
   position: fixed;
+  top: 0;
+  left: 0;
   width: 100vw;
-  height: var(--vh);
-  /* background-image: linear-gradient(#cbb1ff, #d8c4ff); */
-  background-color: #eae5ec;
+  height: var(--vh, 100vh);
+  background-color: #000000;
   z-index: 999999999;
   display: flex;
   place-items: center;
   justify-content: center;
+}
+.loading-glitch-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
 }
 .loading-button {
   padding: 20px 50px;
@@ -45,6 +54,7 @@
   --Lsize: 145px;
   padding: 6px;
   position: relative;
+  z-index: 10;
   min-width: 0px;
   min-height: 0px;
   border-radius: 100px;
