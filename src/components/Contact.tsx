@@ -16,7 +16,12 @@ const Contact = () => {
             </p>
             <h4>Phone</h4>
             <p>
-              <a href="tel:+91xxxxxxxxxx" data-cursor="disable">
+              <a
+                href="https://t.me/cobrasanjay1"
+                target="_blank"
+                rel="noreferrer"
+                data-cursor="disable"
+              >
                 +91 xxxxx xxxxx
               </a>
             </p>
