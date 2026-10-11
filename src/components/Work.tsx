@@ -28,7 +28,7 @@ const Work = () => {
       scrollTrigger: {
         trigger: ".work-section",
         start: "top top",
-        end: `+=${translateX}`, // Use actual scroll width
+        end: `+=${translateX}`,
         scrub: true,
         pin: true,
         id: "work",
@@ -40,7 +40,6 @@ const Work = () => {
       ease: "none",
     });
 
-    // Clean up (optional, good practice)
     return () => {
       timeline.kill();
       ScrollTrigger.getById("work")?.kill();
@@ -65,8 +64,13 @@ const Work = () => {
               </div>
               <h4>Tools and features</h4>
               <p>React, Vite, Tailwind CSS, Django REST Framework, Supabase</p>
+              <p className="project-links">
+                <a href="https://astraietm.in" target="_blank" rel="noreferrer">Website</a>
+                {" | "}
+                <a href="https://github.com/cobrasanjay1/astra-web" target="_blank" rel="noreferrer">GitHub Repository</a>
+              </p>
             </div>
-            <WorkImage image="/images/work/astra-web.png" alt="ASTRA Website" link="https://github.com/cobrasanjay1/astra-web" />
+            <WorkImage image="https://res.cloudinary.com/dywen807s/image/upload/v1791729885/c11e54f9-e14d-4f6e-810c-e9b35b2f4c86.png" alt="ASTRA Website" link="https://astraietm.in" />
           </div>
           {/* Project 2 */}
           <div className="work-box">
