@@ -1,4 +1,5 @@
 import { MdArrowOutward, MdCopyright } from "react-icons/md";
+import BuyMeCoffee from "./BuyMeCoffee";
 import "./styles/Contact.css";
 
 const Contact = () => {
@@ -25,6 +26,8 @@ const Contact = () => {
                 +91 xxxxx xxxxx
               </a>
             </p>
+            <h4>Support</h4>
+            <BuyMeCoffee />
           </div>
           <div className="contact-box">
             <h4>Social</h4>
