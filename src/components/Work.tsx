@@ -59,6 +59,21 @@ const Work = () => {
               <div className="work-title">
                 <h3>01</h3>
                 <div>
+                  <h4>ASTRA Website</h4>
+                  <p>Web / Full Stack</p>
+                </div>
+              </div>
+              <h4>Tools and features</h4>
+              <p>React, Vite, Tailwind CSS, Django REST Framework, Supabase</p>
+            </div>
+            <WorkImage image="/images/work/astra-web.png" alt="ASTRA Website" link="https://github.com/cobrasanjay1/astra-web" />
+          </div>
+          {/* Project 2 */}
+          <div className="work-box">
+            <div className="work-info">
+              <div className="work-title">
+                <h3>02</h3>
+                <div>
                   <h4>Automated CCTV Monitoring</h4>
                   <p>AI / Computer Vision</p>
                 </div>
@@ -67,21 +82,6 @@ const Work = () => {
               <p>Python, YOLO AI, OpenCV, Flask, React</p>
             </div>
             <WorkImage image="https://res.cloudinary.com/dywen807s/image/upload/v1772875149/images_hacpnf.jpg" alt="Automated CCTV Monitoring" link="https://github.com/cobrasanjay1/" />
-          </div>
-          {/* Project 2 */}
-          <div className="work-box">
-            <div className="work-info">
-              <div className="work-title">
-                <h3>02</h3>
-                <div>
-                  <h4>Electricity Billing System</h4>
-                  <p>Desktop App / GUI</p>
-                </div>
-              </div>
-              <h4>Tools and features</h4>
-              <p>Python, MySQL, Tkinter, Matplotlib</p>
-            </div>
-            <WorkImage image="https://res.cloudinary.com/dywen807s/image/upload/v1772875273/download_pmzcl8.jpg" alt="Electricity Billing System" link="https://github.com/cobrasanjay1/" />
           </div>
           {/* Project 3 */}
           <div className="work-box">
@@ -104,14 +104,14 @@ const Work = () => {
               <div className="work-title">
                 <h3>04</h3>
                 <div>
-                  <h4>Portfolio Website</h4>
-                  <p>Web / Full Stack</p>
+                  <h4>Electricity Billing System</h4>
+                  <p>Desktop App / GUI</p>
                 </div>
               </div>
               <h4>Tools and features</h4>
-              <p>React, TypeScript, Three.js, GSAP, Vite</p>
+              <p>Python, MySQL, Tkinter, Matplotlib</p>
             </div>
-            <WorkImage image="https://res.cloudinary.com/dywen807s/image/upload/v1772875447/ed67d548-33fd-45d5-b05f-7bd9d609dbdf.png" alt="Portfolio Website" link="https://github.com/cobrasanjay1/" />
+            <WorkImage image="https://res.cloudinary.com/dywen807s/image/upload/v1772875273/download_pmzcl8.jpg" alt="Electricity Billing System" link="https://github.com/cobrasanjay1/" />
           </div>
         </div>
       </div>
