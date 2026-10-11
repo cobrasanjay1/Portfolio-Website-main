@@ -103,3 +103,15 @@
     font-size: 18px;
   }
 }
+
+/*
+ * Razorpay Checkout has no dark mode. Because the site declares
+ * `color-scheme: light dark`, browsers force an opaque white background on
+ * the checkout iframe, hiding the page behind it. Pinning the iframe to
+ * `light` restores Razorpay's semi-transparent overlay.
+ */
+.razorpay-container iframe,
+iframe.razorpay-checkout-frame,
+iframe[src*="razorpay"] {
+  color-scheme: light;
+}
