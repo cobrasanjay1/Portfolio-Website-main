@@ -84,8 +84,11 @@ const Work = () => {
               </div>
               <h4>Tools and features</h4>
               <p>Python, YOLO AI, OpenCV, Flask, React</p>
+              <p className="project-links">
+                <a href="https://github.com/cobrasanjay1/automated-cctv-monitoring" target="_blank" rel="noreferrer">GitHub Repository</a>
+              </p>
             </div>
-            <WorkImage image="https://res.cloudinary.com/dywen807s/image/upload/v1772875149/images_hacpnf.jpg" alt="Automated CCTV Monitoring" link="https://github.com/cobrasanjay1/" />
+            <WorkImage image="https://res.cloudinary.com/dywen807s/image/upload/v1772875149/images_hacpnf.jpg" alt="Automated CCTV Monitoring" link="https://github.com/cobrasanjay1/automated-cctv-monitoring" />
           </div>
           {/* Project 3 */}
           <div className="work-box">
@@ -99,8 +102,11 @@ const Work = () => {
               </div>
               <h4>Tools and features</h4>
               <p>Flutter, Dart, Android</p>
+              <p className="project-links">
+                <a href="https://github.com/cobrasanjay1/bmi_calculator" target="_blank" rel="noreferrer">GitHub Repository</a>
+              </p>
             </div>
-            <WorkImage image="https://res.cloudinary.com/dywen807s/image/upload/v1772875360/download_m2njgi.png" alt="BMI Calculator App" link="https://github.com/cobrasanjay1/" />
+            <WorkImage image="https://res.cloudinary.com/dywen807s/image/upload/v1772875360/download_m2njgi.png" alt="BMI Calculator App" link="https://github.com/cobrasanjay1/bmi_calculator" />
           </div>
           {/* Project 4 */}
           <div className="work-box">
@@ -114,8 +120,11 @@ const Work = () => {
               </div>
               <h4>Tools and features</h4>
               <p>Python, MySQL, Tkinter, Matplotlib</p>
+              <p className="project-links">
+                <a href="https://github.com/cobrasanjay1/Electricity-Billing-System" target="_blank" rel="noreferrer">GitHub Repository</a>
+              </p>
             </div>
-            <WorkImage image="https://res.cloudinary.com/dywen807s/image/upload/v1772875273/download_pmzcl8.jpg" alt="Electricity Billing System" link="https://github.com/cobrasanjay1/" />
+            <WorkImage image="https://res.cloudinary.com/dywen807s/image/upload/v1772875273/download_pmzcl8.jpg" alt="Electricity Billing System" link="https://github.com/cobrasanjay1/Electricity-Billing-System" />
           </div>
         </div>
       </div>
