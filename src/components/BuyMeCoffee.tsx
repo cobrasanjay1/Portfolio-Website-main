@@ -46,6 +46,24 @@ const loadCheckout = (): Promise<boolean> => {
   return checkoutLoader;
 };
 
+// Razorpay locks page scroll while its modal is open and restores it on close.
+// That restore can wipe the inline overflow set by initialFX, leaving the page
+// unscrollable. After checkout closes, re-assert it for a few seconds.
+const keepScrollEnabled = () => {
+  const apply = () => {
+    if (document.body.style.overflowY !== "auto") {
+      document.body.style.overflow = "hidden auto";
+    }
+  };
+  apply();
+  const observer = new MutationObserver(apply);
+  observer.observe(document.body, {
+    attributes: true,
+    attributeFilter: ["style"],
+  });
+  window.setTimeout(() => observer.disconnect(), 3000);
+};
+
 type Status = "idle" | "loading" | "thanks" | "error";
 
 const BuyMeCoffee = () => {
@@ -91,9 +109,15 @@ const BuyMeCoffee = () => {
       name: "Sanjay Vinod",
       description: "Buy me a coffee",
       theme: { color: "#c2a4ff" },
-      handler: () => setStatus("thanks"),
+      handler: () => {
+        setStatus("thanks");
+        keepScrollEnabled();
+      },
       modal: {
-        ondismiss: () => setStatus((s) => (s === "loading" ? "idle" : s)),
+        ondismiss: () => {
+          setStatus((s) => (s === "loading" ? "idle" : s));
+          keepScrollEnabled();
+        },
       },
     });
     rzp.open();
