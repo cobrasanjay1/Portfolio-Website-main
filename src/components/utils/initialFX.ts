@@ -3,7 +3,9 @@ import gsap from "gsap";
 import { smoother } from "../Navbar";
 
 export function initialFX() {
-  document.body.style.overflowY = "auto";
+  // Shorthand on purpose: third-party modals (e.g. Razorpay) save/restore
+  // body.style.overflow, which drops a lone inline overflow-y.
+  document.body.style.overflow = "hidden auto";
   smoother.paused(false);
   document.getElementsByTagName("main")[0].classList.add("main-active");
   gsap.to("body", {
